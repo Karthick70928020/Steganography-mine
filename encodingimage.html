@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt Message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #d2042d">Encrypt Message</h1>
+        <input type="file" id="imageInput" accept="image/*" onchange="displayFileName(this)">
+        <p id="fileName"></p> <!-- Display only the file name -->
+        <textarea id="messageInput" placeholder="Enter message to hide..."></textarea>
+        <button class="btn" onclick="encodeMessage()">Encrypt AND Download</button>
+        <a href="front.html"><button class="btn back">Back</button></a>
+        <canvas id="canvas" style="display: none;"></canvas> <!-- Hide the canvas -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt Message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #d2042d ; font-family:Arial, Helvetica, sans-serif"> Decrypt Message</h1>
+        <input type="file" id="encodedImageInput" accept="image/*" onchange="displayFileName(this)">
+        <p id="fileName"></p> <!-- Display only the file name -->
+        <button class="btn" onclick="decodeMessage()">Decrypt</button>
+        <a href="front.html"><button class="btn back">Back</button></a>
+        <canvas id="canvas" style="display: none;"></canvas> <!-- Hide the canvas -->
+        <p id="decodedMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
